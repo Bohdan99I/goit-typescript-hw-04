@@ -3,9 +3,7 @@ import noop from "lodash/noop";
 
 type MenuIds = "first" | "second" | "last";
 type Menu = { id: MenuIds; title: string };
-
 type SelectedMenu = { id: MenuIds; };
-
 type MenuSelected = { selectedMenu: SelectedMenu; };
 
 const MenuSelectedContext = createContext<MenuSelected>({
