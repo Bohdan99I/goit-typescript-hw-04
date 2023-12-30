@@ -22,7 +22,6 @@ type PropsProvider = { children: ReactNode; };
 
 function MenuProvider({ children }: PropsProvider) { 
   const [selectedMenu, setSelectedMenu] = useState<SelectedMenu>({ id: "first" });
-
   const menuContextAction = useMemo(
     () => ({
       onSelectedMenu: setSelectedMenu,
